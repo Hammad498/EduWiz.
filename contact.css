@@ -1,0 +1,130 @@
+
+
+.contact_container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 4rem;
+    background: var(--color-bg1);
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+    gap: 4rem;
+}
+.contact_aside{
+    background: var(--color-primary);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom:10rem ;
+}
+.aside_img{
+    margin-bottom: 2rem;
+    width: 12rem;
+}
+.contact_aside h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.contact_aside p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+.contact_details li{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.contact_socials{
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+.contact_socials a{
+    border-radius: 50%;
+    background: var(--color-bg2);
+    padding: 0.5rem;
+    font-size: 1rem;
+    transition: all linear 0.3s;
+}
+.contact_socials a:hover{
+    background: transparent;
+}
+
+
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+.form_name{
+    display: flex;
+    gap: 1.2rem;
+}
+.form_name input[type="text"]{
+    width: 50%;
+}
+input,textarea{
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg);
+    color: aliceblue;
+    border: none ;
+}
+.form .btn{
+    width: max-content;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
+/*--------------------------responsive page- tablets------------------*/
+
+@media screen and (max-width:1024px) {
+    .container{
+        width: var(--container-width-md);
+    }
+    .contact_container{
+        padding: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        gap: 1.5rem;
+    }
+    .contact_aside{
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+    .form{
+        align-self: center;
+       
+    }
+}
+
+/*--------------------------responsive page- tablets------------------*/
+
+@media screen and (max-width:600px) {
+    .container{
+        width: var(--container-width-sm);
+    }
+    .contact_container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+    .form_name{
+        flex-direction: column;
+
+    }
+    .form_name input[type="text"]{
+        width: 100%;
+    }
+    .form{
+        margin: 0 1.5rem 3rem;
+    }
+}
